@@ -43,7 +43,7 @@ var decode = function(str, precision) {
         lat += latitude_change;
         lng += longitude_change;
 
-        coordinates.push([lat / factor, lng / factor]);
+        coordinates.push([lat / factor * 10, lng / factor * 10]);
     }
 
     return coordinates;
